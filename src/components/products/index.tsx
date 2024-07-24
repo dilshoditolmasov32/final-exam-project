@@ -29,6 +29,7 @@ const Index = () => {
       price: "250 000 uzs",
     },
   ];
+
   return (
     <>
       <div>
@@ -40,11 +41,11 @@ const Index = () => {
             <div className="flex gap-6">
               {products?.map((item) => (
                 <div
-                  className="  pt-[25px]  rounded-[5px] bg-white w-[292px] relative"
+                  className=" pt-[25px]  rounded-[5px] bg-white w-[292px] relative"
                   key={item.id}
                 >
                   <button className="top-[10px] right-[14px] absolute">
-                    <Link href={"/#like"}>
+                    <Link href={"#like"}>
                       <Image src={like} alt="like" />
                     </Link>
                   </button>
@@ -58,7 +59,7 @@ const Index = () => {
                     {item.name}
                   </p>
                   <div className="pl-[30px] pr-5  mb-[25px] text-[20px] font-semibold">
-                    {item.price}{" "}
+                    {item.price}
                   </div>
                   <button className="bg-[#FBD029] w-full flex items-center justify-center gap-[6px] py-[15px] font-Fira Sans text-[20px] text-[#1F1D14] rounded-br-[5px] rounded-bl-[5px]">
                     <Image src={cart} alt="korzinka_icon" />
@@ -84,7 +85,7 @@ const Index = () => {
               fontWeight: 600,
               fontSize: "24px",
             }}
-            className="flex items-center gap-[10px] text-[20px] font-Fira Sans  "
+            className="flex items-center gap-[10px] text-[20px] font-Fira Sans"
           >
             Yana ko'rsatish 4
           </Button>
