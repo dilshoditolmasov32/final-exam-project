@@ -31,7 +31,7 @@ const Index = () => {
             <div className="flex gap-6 ">
                 {
                     boxs?.map((item)=>(
-                        <div className="bg-white rounded-[8px] w-[292px] pl-10 pt-16 pr-[70px]">
+                        <div key={item.id} className="bg-white rounded-[8px] w-[292px] pl-10 pt-16 pr-[70px]">
                             <Image src={item.image} alt="icon" className="mb-[30px]"/>
                             <p className="mb-20">{item.title}</p>
                         </div>
